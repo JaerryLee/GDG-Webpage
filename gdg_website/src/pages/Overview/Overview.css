@@ -1,0 +1,36 @@
+.overview-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* 사이드바 부분 */
+.overview-container aside {
+  flex: 0 0 auto; /* Sidebar 자체에서 width 지정 */
+}
+
+.overview-main {
+  flex: 1;
+  padding: 1rem;
+}
+
+/* 달력 래퍼 */
+.calendar-wrapper {
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+/* 날짜 셀에 활동이 있으면 배경 강조, 점 표시 등 */
+.has-activities {
+  background-color: #e9f5ff !important; /* 연한 파란색 배경 */
+}
+
+/* 날짜 셀 안에 일정 개수 표시용 */
+.tile-badge {
+  margin-top: 4px;
+  font-size: 0.7rem;
+  background-color: #ff6f61;
+  color: #fff;
+  padding: 2px 5px;
+  border-radius: 8px;
+  display: inline-block;
+}

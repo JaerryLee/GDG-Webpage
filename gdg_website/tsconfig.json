@@ -1,0 +1,34 @@
+{
+    "compilerOptions": {
+      // 필수 옵션들
+      "target": "ESNext",
+      "lib": ["DOM", "DOM.Iterable", "ESNext"],
+      "allowJs": false,
+      "skipLibCheck": true,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "module": "ESNext",
+      "moduleResolution": "Node",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "jsx": "react-jsx",
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+        
+      // === 경로 설정 부분 ===
+      // 1) baseUrl: src 폴더를 기준점으로 삼는다.
+      "baseUrl": "./src",  
+  
+      // 2) paths: import 경로에 대한 별칭 설정
+      "paths": {
+        "@pages/*": ["pages/*"],
+        "@components/*": ["components/*"],
+        "@redux/*": ["redux/*"],
+        // 필요에 따라 더 추가
+        // 예: "@styles/*": ["styles/*"]
+      }
+    },
+    "include": ["src"],    // src 폴더 이하를 TS 컴파일 대상에 포함
+    "exclude": ["node_modules"]
+  }
+  
